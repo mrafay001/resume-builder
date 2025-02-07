@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "index.html", "use": "@vercel/static" },
+      { "src": "resume.html", "use": "@vercel/static" },
+      { "src": "style.css", "use": "@vercel/static" },
+      { "src": "script.js", "use": "@vercel/static" },
+      { "src": "resumepage.js", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/", "dest": "./index.html" },
+      { "src": "/resume", "dest": "./resume.html" }
+    ]
+}
+
